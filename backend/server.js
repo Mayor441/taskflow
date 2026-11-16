@@ -10,7 +10,10 @@ const app = express()
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
+  origin: [
+    'https://heartfelt-maamoul-92ebbe.netlify.app',
+    'http://localhost:5173'
+  ]
 }))
 app.use(express.json())
 
