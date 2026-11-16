@@ -9,7 +9,9 @@ const taskRoutes = require('./routes/taskRoutes')
 const app = express()
 
 // Middleware
-app.use(cors())
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*',
+}))
 app.use(express.json())
 
 //Task routes
