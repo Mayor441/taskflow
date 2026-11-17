@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // Backend API base URL
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api/tasks',
+  baseURL: 'https://taskflow-backend-cy0v.onrender.com/api/tasks',
 })
 
 // Get all tasks
